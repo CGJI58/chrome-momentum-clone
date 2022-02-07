@@ -1,3 +1,63 @@
+@import "./reset.css";
+@import "./variables.css";
+
 .hidden {
   display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+}
+
+img {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: var(--screen-width);
+  height: 20vh;
+  /* border: 1px dashed; */
+}
+
+.header__row {
+  display: flex;
+  font-weight: var(--text-weight-bold);
+  margin-top: var(--screen-margin-vertical);
+}
+
+.header__row:first-child {
+  justify-content: space-between;
+  font-size: var(--text-size-normal);
+}
+
+.header__row:last-child {
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: var(--text-size-small);
+}
+
+.header__row:last-child span:last-child {
+  margin-top: var(--screen-margin-vertical);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: var(--screen-width);
+  height: 60vh;
+  justify-content: center;
+  border: 1px dashed;
 }

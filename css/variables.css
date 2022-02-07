@@ -1,0 +1,13 @@
+:root {
+  --screen-width: 96vw;
+  --screen-margin-horizontal: 2vw;
+
+  --screen-margin-vertical: 2vh;
+
+  --text-color: whitesmoke;
+  --text-shadow: 2px 2px 1px black;
+  --text-size-large: 3rem;
+  --text-size-normal: 2rem;
+  --text-size-small: 1rem;
+  --text-weight-bold: 600;
+}
