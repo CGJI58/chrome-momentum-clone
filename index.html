@@ -8,6 +8,7 @@
     <title>Momentum App</title>
   </head>
   <body>
+    <img id="background-image" class="img-before-login" src="#" />
     <header>
       <div class="header__row">
         <h1 id="greeting" class="hidden"></h1>
@@ -29,6 +30,11 @@
     </header>
 
     <main>
+      <div id="quote" class="quote">
+        <span></span>
+        <span></span>
+      </div>
+
       <form id="todo-form">
         <input
           type="text"
@@ -38,11 +44,6 @@
       </form>
 
       <ul id="todo-list"></ul>
-
-      <div id="quote">
-        <span></span>
-        <span></span>
-      </div>
     </main>
     <script src="./js/greetings.js"></script>
     <script src="./js/clock.js"></script>
