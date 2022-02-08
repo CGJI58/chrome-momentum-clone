@@ -1,0 +1,93 @@
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--screen-width);
+  height: 70vh;
+  /* border: 1px dashed; */
+}
+
+.quote-section {
+  display: flex;
+  width: 80%;
+  height: var(--quote-section-height);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: var(--screen-margin-vertical); */
+}
+
+.quote-section span:first-child {
+  font-size: var(--text-size-normal);
+  font-weight: var(--text-weight-bold);
+  margin-bottom: var(--screen-margin-vertical);
+  text-align: center;
+  line-height: 140%;
+}
+
+.quote-section span:last-child {
+  font-size: var(--text-size-small);
+}
+
+.todo-list-section {
+  position: absolute;
+  top: var(--quote-section-height);
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--screen-margin-vertical);
+  border: 1px solid;
+  border-radius: var(--text-size-small);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.checked-todo {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.todo-form {
+  margin-bottom: var(--screen-margin-vertical);
+  width: 100%;
+  /* border: 1px dashed; */
+}
+
+.todo-form input {
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--text-color);
+  padding: 10px;
+  border-top-left-radius: var(--text-size-small);
+  border-top-right-radius: var(--text-size-small);
+  border-bottom: 1px dashed var(--text-color);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: var(--screen-margin-vertical);
+}
+
+.todo-list li {
+  display: flex;
+  margin-left: var(--screen-margin-horizontal);
+  margin-bottom: var(--screen-margin-vertical);
+  /* border: 1px dashed; */
+}
+
+.todo-list button {
+  margin-right: var(--screen-margin-horizontal);
+  border-radius: 10%;
+  border: none;
+  background-color: teal;
+  color: var(--text-color);
+}
+
+.todo-list li span {
+  display: flex;
+  font-weight: var(--text-weight-bold);
+}

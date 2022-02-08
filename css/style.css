@@ -1,13 +1,7 @@
 @import "./reset.css";
 @import "./variables.css";
-
-.hidden {
-  display: none;
-}
-
-.appear {
-  display: flex;
-}
+@import "./header.css";
+@import "./main.css";
 
 body {
   display: flex;
@@ -34,82 +28,4 @@ img {
 .img-after-login {
   z-index: -1;
   opacity: 0.5;
-}
-
-header {
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  width: var(--screen-width);
-  height: 20vh;
-  /* border: 1px dashed; */
-}
-
-.header__row {
-  display: flex;
-  font-weight: var(--text-weight-bold);
-  margin-top: var(--screen-margin-vertical);
-}
-
-.header__row:first-child {
-  justify-content: space-between;
-  font-size: var(--text-size-normal);
-}
-
-.header__row:last-child {
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: var(--text-size-small);
-}
-
-.header__row:last-child span:last-child {
-  margin-top: var(--screen-margin-vertical);
-}
-
-.login-form {
-  align-items: center;
-}
-
-.login-form input {
-  height: 100%;
-  font-size: var(--text-size-small);
-}
-
-.login-form input:first-child {
-  border: none;
-  margin-right: var(--screen-margin-horizontal);
-}
-
-.login-form input:last-child {
-  border-radius: 10px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  width: var(--screen-width);
-  height: 60vh;
-  /* border: 1px dashed; */
-}
-
-.quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: var(--screen-margin-vertical);
-}
-
-.quote span:first-child {
-  font-size: var(--text-size-small);
-  font-weight: var(--text-weight-bold);
-  margin-bottom: var(--screen-margin-vertical);
-}
-
-.quote span:last-child {
-  font-size: var(--text-size-small);
-}
-
-.checked-todo {
-  text-decoration: line-through;
-  text-decoration-thickness: 1px;
 }
