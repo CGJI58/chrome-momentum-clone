@@ -30,13 +30,17 @@ function handleToDoSubmit(arg) {
 function paintToDo(newToDo) {
   const li = document.createElement("li");
   li.id = newToDo.id;
+  const delButton = document.createElement("button");
+  delButton.innerText = "X";
+  const checkButton = document.createElement("button");
+  checkButton.innerText = "V";
   const span = document.createElement("span");
   span.innerText = newToDo.text;
-  const button = document.createElement("button");
-  button.innerText = "X";
-  button.addEventListener("click", deleteToDo);
+  delButton.addEventListener("click", deleteToDo);
+  checkButton.addEventListener("click", checkToDo);
+  li.appendChild(delButton);
+  li.appendChild(checkButton);
   li.appendChild(span);
-  li.appendChild(button);
   toDoList.appendChild(li);
 }
 
@@ -50,6 +54,11 @@ function deleteToDo(arg) {
   saveToDos();
 
   li.remove();
+}
+
+function checkToDo(arg) {
+  const todo = arg.target.parentNode.querySelector("span");
+  todo.classList.toggle("checked-todo");
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);

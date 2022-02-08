@@ -108,3 +108,8 @@ main {
 .quote span:last-child {
   font-size: var(--text-size-small);
 }
+
+.checked-todo {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
