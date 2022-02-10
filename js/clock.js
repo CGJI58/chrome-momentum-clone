@@ -7,7 +7,6 @@ function getToday() {
   const month = String(dateInfo.getMonth() + 1).padStart(2, "0");
   const date = String(dateInfo.getDate()).padStart(2, "0");
   today.innerText = `${year}-${month}-${date}`;
-  console.log(today);
 }
 
 function getClock() {
