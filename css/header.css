@@ -65,16 +65,20 @@ header {
   align-items: center;
 }
 
-.login-form input {
+.login-form input:last-child,
+.logout-form input:first-child {
   height: 100%;
+  padding: 5px;
   font-size: var(--text-size-small);
+  border-radius: 10px;
+  background-color: grey;
+  color: var(--text-color);
 }
 
 .login-form input:first-child {
-  border: none;
+  height: 100%;
+  padding-left: 10px;
   margin-right: var(--screen-margin-horizontal);
-}
-
-.login-form input:last-child {
+  border: none;
   border-radius: 10px;
 }
