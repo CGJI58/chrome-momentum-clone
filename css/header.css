@@ -2,10 +2,6 @@
   display: none;
 }
 
-.appear {
-  display: flex;
-}
-
 header {
   z-index: 2;
   display: flex;
@@ -67,7 +63,6 @@ header {
 
 .login-form input:last-child,
 .logout-form input:first-child {
-  height: 100%;
   padding: 5px;
   font-size: var(--text-size-small);
   border-radius: 10px;
@@ -76,9 +71,9 @@ header {
 }
 
 .login-form input:first-child {
-  height: 100%;
-  padding-left: 10px;
+  padding: 10px;
   margin-right: var(--screen-margin-horizontal);
+  margin-bottom: var(--screen-margin-vertical);
   border: none;
   border-radius: 10px;
 }

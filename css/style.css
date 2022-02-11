@@ -19,12 +19,12 @@ img {
   position: fixed;
   width: 100vw;
   height: 100vh;
-}
-
-.img-before-login {
   z-index: 1;
   opacity: 1;
 }
+
+/* .img-before-login {
+} */
 
 .img-after-login {
   z-index: -1;
