@@ -1,20 +1,12 @@
-// const IMGBEFORELOGIN_CLASSNAME = "img-before-login";
-const IMGAFTERLOGIN_CLASSNAME = "img-after-login";
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-const bgImage = document.querySelector("#background-image");
+const main = document.querySelector("#main");
 const loginForm = document.querySelector(".login-form");
 const logoutForm = document.querySelector(".logout-form");
 const loginInput = document.querySelector(".login-form input");
 const greeting = document.querySelector("#greeting");
 const savedUsername = localStorage.getItem(USERNAME_KEY);
-
-const bgImageManager = {
-  imageToggle: function loginImage(arg) {
-    arg.classList.toggle(IMGAFTERLOGIN_CLASSNAME);
-  },
-};
 
 const greetingManager = {
   getUserName: function getUserName(arg) {
@@ -35,18 +27,18 @@ if (savedUsername === null) {
   logManager.formToggle(loginForm);
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-  bgImageManager.imageToggle(bgImage);
   greetingManager.welcomeTextToggle();
   greetingManager.getUserName(savedUsername);
   logManager.formToggle(logoutForm);
+  logManager.formToggle(main);
   logoutForm.addEventListener("submit", onLogoutSubmit);
 }
 
 function onLoginSubmit(arg) {
   arg.preventDefault();
-  bgImageManager.imageToggle(bgImage);
   logManager.formToggle(loginForm);
   logManager.formToggle(logoutForm);
+  logManager.formToggle(main);
   const typedUsername = loginInput.value;
   greetingManager.welcomeTextToggle(typedUsername);
   greetingManager.getUserName(typedUsername);
@@ -56,9 +48,9 @@ function onLoginSubmit(arg) {
 
 function onLogoutSubmit(arg) {
   arg.preventDefault();
-  bgImageManager.imageToggle(bgImage);
   logManager.formToggle(logoutForm);
   logManager.formToggle(loginForm);
+  logManager.formToggle(main);
   localStorage.removeItem(USERNAME_KEY);
   greetingManager.welcomeTextToggle();
   window.location.reload();
