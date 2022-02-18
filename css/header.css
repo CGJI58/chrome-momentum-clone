@@ -6,13 +6,13 @@ header {
   /* z-index: 2; */
   display: flex;
   width: var(--screen-width);
-  height: 20vh;
-  margin-top: var(--screen-margin-vertical);
+  height: var(--header-section-height);
 }
 
 .header__column {
   display: flex;
   font-weight: var(--text-weight-bold);
+  margin-top: var(--screen-margin-vertical);
 }
 
 .header__column:first-child {

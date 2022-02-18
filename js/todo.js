@@ -36,12 +36,14 @@ function paintToDo(newToDo) {
   checkButton.classList.add("fa-check");
   li.appendChild(checkButton);
   checkButton.addEventListener("click", checkToDo);
+  // checkButton.addEventListener("mouseover", pointerManager);
 
   const delButton = document.createElement("i");
   delButton.classList.add("fas");
   delButton.classList.add("fa-trash-alt");
   li.appendChild(delButton);
   delButton.addEventListener("click", deleteToDo);
+  // delButton.addEventListener("mouseover", pointerManager);
 
   const span = document.createElement("span");
   span.innerText = newToDo.text;

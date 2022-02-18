@@ -11,5 +11,7 @@
   --text-size-small: 1rem;
   --text-weight-bold: 600;
 
+  --header-section-height: 20vh;
   --quote-section-height: 30vh;
+  --todo-list-section-height: 40vh;
 }

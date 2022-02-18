@@ -4,7 +4,6 @@ main {
   flex-direction: column;
   align-items: center;
   width: var(--screen-width);
-  /* height: 70vh; */
   /* border: 1px dashed; */
 }
 
@@ -35,9 +34,9 @@ main {
   top: var(--quote-section-height);
   display: flex;
   width: 80%;
+  height: var(--todo-list-section-height);
   flex-direction: column;
   align-items: center;
-  margin-top: var(--screen-margin-vertical);
   border: 1px solid;
   border-radius: var(--text-size-small);
   background: rgba(0, 0, 0, 0.2);
@@ -72,20 +71,22 @@ main {
 
 .todo-list li {
   display: flex;
+  align-items: center;
   margin: 0px var(--screen-margin-horizontal);
   margin-bottom: var(--screen-margin-vertical);
-  /* border: 1px dashed; */
 }
 
 .todo-list i {
   margin-right: var(--screen-margin-horizontal);
-  height: 100%;
-  border-radius: 10%;
-  border: none;
+  /* height: 100%; */
+  border: 2px var(--text-color) solid;
+  border-radius: 50%;
+  padding: 5px;
   color: var(--text-color);
 }
 
 .todo-list li span {
   display: flex;
   font-weight: var(--text-weight-bold);
+  font-size: var(--text-size-small);
 }
