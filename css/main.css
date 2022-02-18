@@ -89,4 +89,5 @@ main {
   display: flex;
   font-weight: var(--text-weight-bold);
   font-size: var(--text-size-small);
+  line-height: 140%;
 }
