@@ -31,21 +31,23 @@ function paintToDo(newToDo) {
   const li = document.createElement("li");
   li.id = newToDo.id;
 
-  const checkButton = document.createElement("button");
-  checkButton.innerText = "V";
+  const checkButton = document.createElement("i");
+  checkButton.classList.add("fas");
+  checkButton.classList.add("fa-check");
   li.appendChild(checkButton);
   checkButton.addEventListener("click", checkToDo);
 
-  const delButton = document.createElement("button");
-  delButton.innerText = "X";
+  const delButton = document.createElement("i");
+  delButton.classList.add("fas");
+  delButton.classList.add("fa-trash-alt");
   li.appendChild(delButton);
   delButton.addEventListener("click", deleteToDo);
 
   const span = document.createElement("span");
   span.innerText = newToDo.text;
-  span.classList = newToDo.class;
   li.appendChild(span);
 
+  li.classList = newToDo.class;
   toDoList.appendChild(li);
 }
 
@@ -62,8 +64,7 @@ function deleteToDo(arg) {
 
 function checkToDo(arg) {
   const checkedTodo = arg.target.parentNode;
-  const checkedTodoSpan = checkedTodo.querySelector("span");
-  checkedTodoSpan.classList.toggle("checked-todo");
+  checkedTodo.classList.toggle("checked-todo");
 
   toDos.filter(function addCheck(item) {
     if (item.id == checkedTodo.id) {
