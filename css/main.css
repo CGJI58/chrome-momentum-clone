@@ -44,8 +44,7 @@ main {
 }
 
 .checked-todo {
-  text-decoration: line-through;
-  text-decoration-thickness: 1px;
+  opacity: 0.3;
 }
 
 .todo-form {
@@ -78,12 +77,11 @@ main {
   /* border: 1px dashed; */
 }
 
-.todo-list button {
+.todo-list i {
   margin-right: var(--screen-margin-horizontal);
   height: 100%;
   border-radius: 10%;
   border: none;
-  background-color: teal;
   color: var(--text-color);
 }
 
