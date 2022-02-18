@@ -69,18 +69,18 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: var(--screen-margin-vertical);
 }
 
 .todo-list li {
   display: flex;
-  margin-left: var(--screen-margin-horizontal);
+  margin: 0px var(--screen-margin-horizontal);
   margin-bottom: var(--screen-margin-vertical);
   /* border: 1px dashed; */
 }
 
 .todo-list button {
   margin-right: var(--screen-margin-horizontal);
+  height: 100%;
   border-radius: 10%;
   border: none;
   background-color: teal;
