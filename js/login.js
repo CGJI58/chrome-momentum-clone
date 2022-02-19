@@ -10,7 +10,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 const greetingManager = {
   getUserName: function getUserName(arg) {
-    greeting.innerText = `Hello ${arg}`;
+    greeting.innerText = `Welcome ${arg}`;
   },
   welcomeTextToggle: function welcomeTextToggle() {
     greeting.classList.toggle(HIDDEN_CLASSNAME);

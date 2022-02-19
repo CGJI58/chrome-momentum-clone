@@ -37,7 +37,8 @@ main {
   height: var(--todo-list-section-height);
   flex-direction: column;
   align-items: center;
-  border: 1px solid;
+  border: 1px solid var(--UI-color);
+  box-shadow: var(--UI-shadow);
   border-radius: var(--text-size-small);
   background: rgba(0, 0, 0, 0.2);
 }
@@ -49,7 +50,6 @@ main {
 .todo-form {
   margin-bottom: var(--screen-margin-vertical);
   width: 100%;
-  /* border: 1px dashed; */
 }
 
 .todo-form input {
@@ -59,7 +59,8 @@ main {
   padding: 10px;
   border-top-left-radius: var(--text-size-small);
   border-top-right-radius: var(--text-size-small);
-  border-bottom: 1px dashed var(--text-color);
+  border: none;
+  border-bottom: 1px solid var(--UI-color);
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -79,10 +80,11 @@ main {
 .todo-list i {
   margin-right: var(--screen-margin-horizontal);
   /* height: 100%; */
-  border: 2px var(--text-color) solid;
+  border: 2px var(--UI-color) solid;
+  box-shadow: var(--UI-shadow);
   border-radius: 50%;
   padding: 5px;
-  color: var(--text-color);
+  color: var(--UI-color);
   cursor: pointer;
 }
 
