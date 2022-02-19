@@ -42,6 +42,7 @@ header {
   justify-content: flex-start;
 }
 .header__column__date {
+  margin-top: 5px;
   font-size: var(--text-size-normal);
   margin-bottom: var(--screen-margin-vertical);
 }
@@ -73,7 +74,7 @@ header {
 
 .login-form input:first-child {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: var(--UI-border-radius);
   border: none;
   box-shadow: var(--UI-shadow);
   margin-bottom: var(--screen-margin-vertical);
@@ -85,7 +86,7 @@ header {
   top: 50px;
   width: 100px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: var(--UI-border-radius);
   border: none;
   box-shadow: var(--UI-shadow);
   font-size: var(--text-size-small);

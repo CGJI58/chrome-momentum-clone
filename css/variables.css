@@ -11,8 +11,9 @@
   --text-size-small: 1rem;
   --text-weight-bold: 600;
   --UI-color: rgb(0, 160, 160);
-  --UI-color-dark: rgb(0, 100, 100);
+  --UI-color-dark: rgb(0, 80, 80);
   --UI-shadow: 2px 2px 1px black;
+  --UI-border-radius: 5px;
 
   --header-section-height: 20vh;
   --quote-section-height: 30vh;
