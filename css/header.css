@@ -45,12 +45,14 @@ header {
   margin-top: 5px;
   font-size: var(--text-size-normal);
   margin-bottom: var(--screen-margin-vertical);
+  white-space: nowrap;
 }
 .header__column__weather {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-size: var(--text-size-small);
+  white-space: nowrap;
 }
 
 .header__column__weather span:first-child {
