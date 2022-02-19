@@ -11,8 +11,6 @@ body {
   background-color: black;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
-  /* overflow-x: hidden; */
-  box-sizing: border-box;
 }
 
 img {
