@@ -2,45 +2,47 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: var(--screen-width);
-  /* border: 1px solid var(--UI-color); */
+  height: var(--main-section-height);
+  padding: 0 var(--screen-margin-horizontal);
+  box-sizing: border-box;
 }
 
 .quote-section {
   display: flex;
-  width: 80%;
+  /* width: 100%; */
   height: var(--quote-section-height);
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* margin-top: var(--screen-margin-vertical); */
+  /* align-items: center; */
+  font-weight: var(--text-weight-bold);
 }
 
 .quote-section span:first-child {
   font-size: var(--text-size-normal);
-  font-weight: var(--text-weight-bold);
   margin-bottom: var(--screen-margin-vertical);
   text-align: center;
   line-height: 140%;
 }
 
 .quote-section span:last-child {
-  font-size: var(--text-size-normal);
+  font-size: var(--text-size-small);
+  text-align: center;
+  line-height: 140%;
 }
 
 .todo-list-section {
-  position: absolute;
   top: var(--quote-section-height);
   display: flex;
-  width: 80%;
+  /* width: 100%; */
   height: var(--todo-list-section-height);
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--UI-color);
   box-shadow: var(--UI-shadow);
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .checked-todo {
@@ -60,7 +62,7 @@ main {
   border-top-right-radius: 5px;
   border: none;
   border-bottom: 1px solid var(--UI-color);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .todo-list {

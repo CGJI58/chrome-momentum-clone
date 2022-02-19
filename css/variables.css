@@ -1,8 +1,8 @@
 :root {
-  --screen-width: 96vw;
-  --screen-margin-horizontal: 3vw;
+  --screen-width: 100%;
+  --screen-margin-horizontal: 20px;
 
-  --screen-margin-vertical: 3vh;
+  --screen-margin-vertical: 10px;
 
   --text-color: whitesmoke;
   --text-shadow: 2px 2px 1px black;
@@ -15,7 +15,8 @@
   --UI-shadow: 2px 2px 1px black;
   --UI-border-radius: 5px;
 
-  --header-section-height: 20vh;
+  --header-section-height: 15vh;
+  --main-section-height: 85vh;
   --quote-section-height: 30vh;
-  --todo-list-section-height: 40vh;
+  --todo-list-section-height: 50vh;
 }

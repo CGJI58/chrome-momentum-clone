@@ -1,62 +1,51 @@
 header {
-  /* z-index: 2; */
+  position: relative;
   display: flex;
+  justify-content: space-between;
   width: var(--screen-width);
   height: var(--header-section-height);
+  padding: var(--screen-margin-vertical) var(--screen-margin-horizontal);
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid var(--UI-color); */
 }
 
 .header__column {
   display: flex;
   font-weight: var(--text-weight-bold);
-  margin-top: var(--screen-margin-vertical);
-  /* border: 1px solid; */
+  line-height: 140%;
 }
 
 .header__column:first-child {
-  position: relative;
-  width: 25%;
   flex-direction: column;
   justify-content: flex-start;
   font-size: var(--text-size-normal);
 }
 
-.header__column:first-child h1 {
-  position: absolute;
-  width: 60vw;
-  top: 5px;
-  left: 2px;
-}
-
-.header__column:nth-child(2) {
-  width: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: var(--text-size-large);
-}
-
 .header__column:last-child {
-  width: 25%;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
 }
-.header__column__date {
-  margin-top: 5px;
+
+.header__column__greeting {
+  white-space: nowrap;
+  margin-bottom: var(--screen-margin-vertical);
+}
+
+.header__column__date,
+.header__column__clock {
   font-size: var(--text-size-normal);
   margin-bottom: var(--screen-margin-vertical);
   white-space: nowrap;
 }
+
 .header__column__weather {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-size: var(--text-size-small);
   white-space: nowrap;
-}
-
-.header__column__weather span:first-child {
-  margin-bottom: var(--screen-margin-vertical);
 }
 
 .login-form,
@@ -85,8 +74,6 @@ header {
 
 .login-form input:last-child,
 .logout-form input {
-  position: absolute;
-  top: 50px;
   width: 100px;
   padding: 10px;
   border-radius: var(--UI-border-radius);
