@@ -95,8 +95,7 @@ main {
 }
 
 .todo-list i {
-  margin-right: var(--screen-margin-horizontal);
-  /* height: 100%; */
+  margin-right: 20px;
   border: 2px var(--UI-color) solid;
   box-shadow: var(--UI-shadow);
   border-radius: 50%;

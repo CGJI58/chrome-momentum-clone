@@ -73,6 +73,7 @@ header {
 }
 
 .login-form input:first-child {
+  width: 150px;
   padding: 10px;
   border-radius: var(--UI-border-radius);
   border: none;
