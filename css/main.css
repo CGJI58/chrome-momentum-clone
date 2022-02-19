@@ -1,16 +1,15 @@
 main {
   position: relative;
-  top: var(--header-section-height);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: var(--screen-width); */
-  margin: 0 var(--screen-margin-horizontal);
-  border: 1px solid var(--UI-color);
+  width: var(--screen-width);
+  /* border: 1px solid var(--UI-color); */
 }
 
 .quote-section {
   display: flex;
+  width: 80%;
   height: var(--quote-section-height);
   flex-direction: column;
   justify-content: center;
@@ -34,7 +33,7 @@ main {
   position: absolute;
   top: var(--quote-section-height);
   display: flex;
-  width: 100%;
+  width: 80%;
   height: var(--todo-list-section-height);
   flex-direction: column;
   align-items: center;
