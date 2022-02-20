@@ -3,8 +3,8 @@ main {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  width: var(--screen-width);
-  height: var(--main-section-height);
+  width: 100%;
+  /* height: var(--main-section-height); */
   padding: 0 var(--screen-margin-horizontal);
   box-sizing: border-box;
 }
