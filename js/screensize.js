@@ -1,11 +1,11 @@
 console.log(window.outerWidth, window.outerHeight);
 console.log(window.innerWidth, window.innerHeight);
 
-const bodySize = document.querySelector("html");
-const bgImageSize = document.querySelector("#background-image");
+const bodySize = document.querySelector("body");
 // console.log(document);
 
-bodySize.style.width = `${window.outerWidth}`;
-bodySize.style.height = `${window.outerHeight}`;
-bgImageSize.style.width = `${window.outerWidth}`;
-bgImageSize.style.height = `${window.outerHeight}`;
+bodySize.style.width = `${window.innerWidth}px`;
+bodySize.style.height = `${window.innerHeight}px`;
+
+// bodySize.onresize = "parent.resizeTo(500,400)";
+// bodySize.onload = "parent.resizeTo(500,400)";

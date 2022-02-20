@@ -1,21 +1,19 @@
 main {
-  position: relative;
+  position: absolute;
+  top: var(--header-section-height);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 100%;
-  /* height: var(--main-section-height); */
+  height: var(--main-section-height);
   padding: 0 var(--screen-margin-horizontal);
   box-sizing: border-box;
 }
 
 .quote-section {
   display: flex;
-  /* width: 100%; */
   height: var(--quote-section-height);
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   font-weight: var(--text-weight-bold);
 }
 
@@ -33,7 +31,6 @@ main {
 }
 
 .todo-list-section {
-  top: var(--quote-section-height);
   display: flex;
   /* width: 100%; */
   height: var(--todo-list-section-height);

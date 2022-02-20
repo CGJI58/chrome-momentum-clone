@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* height: var(--header-section-height); */
+  height: var(--header-section-height);
   padding: var(--screen-margin-vertical) var(--screen-margin-horizontal);
   padding-bottom: 0px;
   box-sizing: border-box;

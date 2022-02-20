@@ -15,8 +15,9 @@
   --UI-shadow: 2px 2px 1px black;
   --UI-border-radius: 5px;
 
-  --header-section-height: 15vh;
-  --main-section-height: 85vh;
-  --quote-section-height: 30vh;
-  --todo-list-section-height: 50vh;
+  --header-section-height: 20%;
+  --main-section-height: 80%;
+
+  --quote-section-height: 30%;
+  --todo-list-section-height: 60%;
 }

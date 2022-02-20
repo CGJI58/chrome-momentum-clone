@@ -20,3 +20,5 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 const bgImage = document.querySelector("#background-image");
 
 bgImage.src = `img/${chosenImage}`;
+bgImage.style.width = `${window.innerWidth}px`;
+bgImage.style.height = `${window.innerHeight}px`;

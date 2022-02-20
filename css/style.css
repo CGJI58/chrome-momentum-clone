@@ -4,6 +4,7 @@
 @import "./main.css";
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,11 +12,11 @@ body {
   background-color: black;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
-  /* overflow-x: hidden; */
+  overflow: hidden;
   box-sizing: border-box;
 }
 
-img {
+#background-image {
   position: fixed;
   z-index: -1;
   opacity: 0.5;
