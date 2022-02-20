@@ -2,6 +2,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 const main = document.querySelector("#main");
+const userManual = document.querySelector("#user-manual");
 const loginForm = document.querySelector(".login-form");
 const logoutForm = document.querySelector(".logout-form");
 const loginInput = document.querySelector(".login-form input");
@@ -30,6 +31,7 @@ if (savedUsername === null) {
   greetingManager.welcomeTextToggle();
   greetingManager.getUserName(savedUsername);
   logManager.formToggle(logoutForm);
+  logManager.formToggle(userManual);
   logManager.formToggle(main);
   logoutForm.addEventListener("submit", onLogoutSubmit);
 }
@@ -37,7 +39,9 @@ if (savedUsername === null) {
 function onLoginSubmit(arg) {
   arg.preventDefault();
   logManager.formToggle(loginForm);
+
   logManager.formToggle(logoutForm);
+  logManager.formToggle(userManual);
   logManager.formToggle(main);
   const typedUsername = loginInput.value;
   greetingManager.welcomeTextToggle(typedUsername);
@@ -49,7 +53,9 @@ function onLoginSubmit(arg) {
 function onLogoutSubmit(arg) {
   arg.preventDefault();
   logManager.formToggle(logoutForm);
+  logManager.formToggle(userManual);
   logManager.formToggle(loginForm);
+
   logManager.formToggle(main);
   localStorage.removeItem(USERNAME_KEY);
   greetingManager.welcomeTextToggle();

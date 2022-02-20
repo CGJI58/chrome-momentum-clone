@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./variables.css";
+@import "./guide.css";
 @import "./header.css";
 @import "./main.css";
 
@@ -22,3 +23,8 @@ body {
   z-index: -1;
   opacity: 0.5;
 }
+
+.hidden {
+  display: none;
+}
+/*make sure that hidden class must come after every classes that you want to hide.*/

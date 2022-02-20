@@ -1,0 +1,29 @@
+.user-manual {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  /* font-weight: var(--text-weight-bold); */
+  padding: 0 var(--screen-margin-horizontal);
+  line-height: 180%;
+}
+
+.user-manual__title {
+  text-align: center;
+  font-size: var(--text-size-normal);
+  margin-bottom: 30px;
+}
+
+.user-manual__paragraph {
+  font-size: var(--text-size-small);
+  margin-bottom: var(--screen-margin-vertical);
+}
+
+.user-manual__paragraph i {
+  color: var(--UI-color);
+  border: 2px var(--UI-color) solid;
+  box-shadow: var(--UI-shadow);
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
