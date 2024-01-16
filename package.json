@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "vanilajs__chrome-momentum-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "deploy": "gulp deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/register": "^7.23.7",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
