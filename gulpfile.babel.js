@@ -3,6 +3,8 @@ import { deleteAsync } from "del";
 import ws from "gulp-webserver";
 import gimage from "gulp-imagemin";
 import ghPages from "gulp-gh-pages";
+import bro from "gulp-bro";
+import Babelify from "babelify";
 
 const routes = {
   html: {
@@ -35,10 +37,23 @@ const img = () =>
 
 const styles = () => gulp.src(routes.css.src).pipe(gulp.dest(routes.css.dest));
 
+const js = () =>
+  gulp
+    .src(routes.js.src)
+    .pipe(
+      bro({
+        transform: [
+          Babelify.configure({ presets: ["@babel/preset-env"] }),
+          ["uglifyify", { global: true }],
+        ],
+      })
+    )
+    .pipe(gulp.dest(routes.js.dest));
+
 const gh = () => gulp.src("build/**/*").pipe(ghPages());
 
 const prepare = gulp.series([clean, img]);
-const assets = gulp.series([html, styles]);
+const assets = gulp.series([html, styles, js]);
 const postDev = gulp.series([webserver]);
 
 export const build = gulp.series([prepare, assets]);
