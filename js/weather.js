@@ -1,21 +1,4 @@
-const API_KEY = "cca8f2c6bf220d07d6c530b371539655";
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+"use strict";var API_KEY="cca8f2c6bf220d07d6c530b371539655";function onGeoOK(t){var e=t.coords.latitude,o=t.coords.longitude,n="https://api.openweathermap.org/data/2.5/weather?lat=".concat(e,"&lon=").concat(o,"&appid=").concat(API_KEY,"&units=metric");fetch(n).then(function(t){return t.json()}).then(function(t){var e=document.querySelector("#weather span:first-child");document.querySelector("#weather span:last-child").innerText="".concat(t.weather[0].main," / ").concat(t.main.temp,"°C"),e.innerText=t.name})}function onGeoError(){alert("No weather information for you.")}navigator.geolocation.getCurrentPosition(onGeoOK,onGeoError);
 
-function onGeoOK(location) {
-  const lat = location.coords.latitude;
-  const lon = location.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      const city = document.querySelector("#weather span:first-child");
-      const weather = document.querySelector("#weather span:last-child");
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
-      city.innerText = data.name;
-    });
-}
-
-function onGeoError() {
-  alert("No weather information for you.");
-}
-
-navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);
+},{}]},{},[1]);
